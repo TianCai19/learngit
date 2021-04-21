@@ -1,8 +1,14 @@
 ## 开小差
 
 1. 想要找笔记内容的话，note上可能已经被删除了
+
 2. to learn notion?
+
 3. 看到python好想学，但是怎么解决总是忘记的问题呢？到底能不能用上呢？怎么保证学了不忘呢。如果不能融入生活，至少为生活留下痕迹吧（b站教学视频）
+
+   
+
+
 
 
 
@@ -20,22 +26,22 @@
       $ git config --global user.email "email@example.com"
       ```
 
-   #### 创建版本库
-   
-   ------
-   
-   什么是版本库呢？版本库又名仓库，英文名**repository**，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。
-   
-   所以，创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：
-   
-   ```
-   $ mkdir learngit
-   $ cd learngit
-   $ pwd
-   /Users/michael/learngit
-   ```
-   
-   `pwd`命令用于显示当前目录。
+### 创建版本库
+
+------
+
+什么是版本库呢？版本库又名仓库，英文名**repository**，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。
+
+所以，创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：
+
+```
+$ mkdir learngit
+$ cd learngit
+$ pwd
+/Users/michael/learngit
+```
+
+`pwd`命令用于显示当前目录。
 
 第二步，通过`git init`命令把这个目录变成Git可以管理的仓库：
 
@@ -104,7 +110,7 @@ $ git add file2.txt file3.txt
 $ git commit -m "add 3 files."
 ```
 
-##### 总结
+#### 总结
 
 初始化一个Git仓库，使用`git init`命令。
 
@@ -832,6 +838,8 @@ git push gitee master
 | ------- | ------------------- |
 | ssh.txt | git status 检测不到 |
 |*.py|忽略.py结尾的文件|
+|.venv|忽略.venv这个文件 语法：relative/path/to/cache/|
+
 
 #### 检验代码
 
