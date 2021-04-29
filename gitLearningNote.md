@@ -986,6 +986,8 @@ $ cat .gitconfig
 
 
 ## 遇到的一些error
+### 问题1 
+
 “fatal: unable to access 'https://github.com/TianCai19/DM.git/': OpenSSL SSL_read: Connection was reset, errno 10054”
 
 **solution**:  删除了多余的id_rsa 文件
@@ -995,3 +997,8 @@ $ cat .gitconfig
 3. 全局搜索了id_rsa 文件。发现存在两个（有一个是之前生成但是忘记删除的）
 4. 再次尝试，解决了错误。
 
+### 问题2
+
+fatal: unable to access 'https://github.com/TianCai19/DM.git/': Failed to connect to github.com port 443: Timed out
+
+**solution**:等一会就好了，，，
