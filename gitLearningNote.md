@@ -982,3 +982,16 @@ $ cat .gitconfig
 ```
 
 配置别名也可以直接修改这个文件，如果改错了，可以删掉文件重新通过命令配置。
+
+
+
+## 遇到的一些error
+“fatal: unable to access 'https://github.com/TianCai19/DM.git/': OpenSSL SSL_read: Connection was reset, errno 10054”
+
+**solution**:  删除了多余的id_rsa 文件
+
+1. 发现在一个常用的文件夹下使用是ok的
+2. 但是在另外一个文件夹下出现了上述的错误
+3. 全局搜索了id_rsa 文件。发现存在两个（有一个是之前生成但是忘记删除的）
+4. 再次尝试，解决了错误。
+
